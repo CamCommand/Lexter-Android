@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFE53935"
+    tools:context=".MainHead">
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="346dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="372dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/Attack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DE3E81EA"
+
+            android:text="@string/attack_calculator" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/blocker"
+            app:srcCompat="@android:drawable/divider_horizontal_textfield" />
+
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DE3E81EA"
+            android:text="@string/capture_calculator" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/divider_horizontal_textfield"
+            android:contentDescription="@string/blocker2" />
+
+        <Button
+            android:id="@+id/Button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DE3E81EA"
+            android:text="@string/poaching_calculator" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/blocker4"
+            app:srcCompat="@android:drawable/divider_horizontal_textfield" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DE3E81EA"
+            android:text="@string/poaching_calculator"
+            tools:text="EXP Calculator" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/blocker3"
+            app:srcCompat="@android:drawable/divider_horizontal_textfield" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DE3E81EA"
+            android:text="@string/calculator" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="379dp"
+        android:layout_height="328dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="96dp"
+            android:layout_height="151dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/voicebox"
+            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+        <TextView
+            android:id="@+id/open"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_weight="30"
+            android:text="@string/hello_my_name_is_lexter_i_m_not_a_pokedex_like_my_brother_i_just_do_math_what_can_i_do_for_you"
+            android:textSize="24sp"
+            android:visibility="visible"
+            tools:text="Hello, my name is Lexter. I'm not a Pokedex like my brother. I just do math. What can I do for you?" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

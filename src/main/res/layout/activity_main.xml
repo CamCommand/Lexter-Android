@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/attackstat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="168dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/at_or_sp_att"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/defstat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="168dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/def_or_sp_def"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="168dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/ability_mod_5_75_1_1_25_1_5"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/stab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginRight="232dp"
+        android:text="@string/stab"
+        android:textOff="@string/no_stab"
+        android:textOn="@string/stab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Enter"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginBottom="28dp"
+        android:background="#3F51B5"
+        android:text="@string/enter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginBottom="28dp"
+        android:background="#3F51B5"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/crit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="168dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/critical_rate_0_4"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/burn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="584dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginRight="232dp"
+        android:text="@string/burn"
+        android:textOff="@string/no_burn"
+        android:textOn="@string/burned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/damtext"
+        android:layout_width="138dp"
+        android:layout_height="338dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:fontFamily="@font/abeezee"
+        app:layout_constraintStart_toEndOf="@+id/defstat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pwr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="168dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/pwr_of_the_move"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="168dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/lvl_of_attacker"
+        android:inputType="number"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/weak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="168dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/effective_rate_5_2"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="464dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="168dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/weather_impact"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
